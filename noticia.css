@@ -21,6 +21,9 @@ button {
   outline: 0;
 }
 
+
+
+
 .main-container {
   position: relative;
   width: 1440px;
@@ -64,6 +67,7 @@ button {
   text-align: left;
   white-space: nowrap;
   z-index: 23;
+  border-bottom: 1px solid    #a8c9e4;;
 }
 * {
   margin: 0;
