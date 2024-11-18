@@ -31,8 +31,8 @@ button {
 }
 .rectangle {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 1440px;
+  height: 165px;
   margin: -12px 0 0 0;
   background: #15193e;
   z-index: 1;
