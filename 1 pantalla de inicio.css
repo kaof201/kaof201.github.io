@@ -1,0 +1,390 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 1281px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+.rectangle {
+  position: relative;
+  width: 1440px;
+  height: 165px;
+  margin: -12px 0 0 0;
+  background: #15193e;
+  z-index: 1;
+}
+.image {
+  position: absolute;
+  width: 259px;
+  height: 91px;
+  top: 54px;
+  left: 25px;
+  background: url(./assets/images/6250faa2b7607f7491f9d02f4283be4658512b0e.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 2;
+}
+.inicio {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 51px;
+  top: 73px;
+  left: 401px;
+  color: #a8c9e4;
+  font-family: Oswald, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 24;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Oswald, sans-serif;
+  background: #f0f0f0;
+}
+
+a {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #a8c9e4;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+  transition: color 0.5s ease;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+/* Hover effects */
+a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #a8c9e4;
+  border-bottom: 2px solid #a8c9e4;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a8c9e4;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: -1;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+a:hover:after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Specific element positioning */
+.news {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 73px;
+  left: 1151px;
+  z-index: 23;
+}
+
+
+
+.game-guide {
+  position: absolute;
+  top: 73px;
+  left: 603px;
+  z-index: 25;
+}
+
+.characters {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 73px;
+  left: 898px;
+  z-index: 26;
+}
+.rectangle-2 {
+  position: relative;
+  width: 1440px;
+  height: 1128px;
+  margin: 0 0 0 0;
+  background: #3f0fa6;
+  overflow: visible auto;
+}
+.flex-row-a {
+  position: relative;
+  width: 1292px;
+  height: 236px;
+  margin: 135px 0 0 50px;
+  z-index: 19;
+}
+.combate-3d {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 41px;
+  top: 0;
+  left: 46px;
+  color: #f5eb18;
+  font-family: Oswald, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 41px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 10;
+}
+.download {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 5px;
+  left: 0;
+  background: url(./assets/images/cb9806e5-37cc-46fb-9931-64d0a1155ab0.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 19;
+}
+.image-3 {
+  position: absolute;
+  width: 381px;
+  height: 231px;
+  top: 5px;
+  left: 911px;
+  background: url(./assets/images/8722ea56-0956-4ee6-8b91-91b66b2b808f.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 4;
+}
+.participa-trepidantes-combates {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 602px;
+  height: 150px;
+  top: 86px;
+  left: 48px;
+  color: #ffffff;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+  z-index: 3;
+}
+.participa-trepidantes-combates-4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 602px;
+  height: 150px;
+  top: 86px;
+  left: 48px;
+  color: #ffffff;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+  z-index: 11;
+}
+.flex-row-ce {
+  position: relative;
+  width: 1283px;
+  height: 239px;
+  margin: 69px 0 0 98px;
+  z-index: 18;
+}
+.download-5 {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 0;
+  left: 802px;
+  background: url(./assets/images/09c7dd25-577d-4176-b92c-9000a911195b.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 18;
+}
+.escenarios-destructibles {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 435px;
+  height: 84px;
+  top: 0;
+  left: 848px;
+  color: #f5eb18;
+  font-family: Oswald, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 53.352px;
+  text-align: left;
+  z-index: 12;
+}
+.image-6 {
+  position: absolute;
+  width: 368.176px;
+  height: 231px;
+  top: 8px;
+  left: 0;
+  background: url(./assets/images/d827c6d7-f71f-4225-97de-74673f3315b8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 5;
+}
+.sal-luchar-escenario {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: absolute;
+  width: 536px;
+  height: 109px;
+  top: 109px;
+  left: 715px;
+  color: #ffffff;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: right;
+  z-index: 13;
+}
+.flex-row {
+  position: relative;
+  width: 1310.775px;
+  height: 242px;
+  margin: 125px 0 0 50px;
+  z-index: 20;
+}
+.image-7 {
+  position: absolute;
+  width: 480.775px;
+  height: 231px;
+  top: 0;
+  left: 830px;
+  background: url(./assets/images/c744e00e-c3b7-48bb-9a14-83e97c1aebc8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+}
+.download-8 {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 31px;
+  left: 0;
+  background: url(./assets/images/d9236aff-9635-450c-8783-a60ca5041712.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 20;
+}
+.los-enemigos-te-hacen {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 487px;
+  height: 84px;
+  top: 31px;
+  left: 46px;
+  color: #f5eb18;
+  font-family: Oswald, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 53.352px;
+  text-align: left;
+  text-overflow: initial;
+  z-index: 14;
+  overflow: hidden;
+}
+.desafia-a-otros {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 536px;
+  height: 109px;
+  top: 133px;
+  left: 48px;
+  color: #ffffff;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  text-align: left;
+  z-index: 16;
+}
+.download-9 {
+  position: absolute;
+  width: 1519px;
+  height: 81px;
+  top: 1199px;
+  left: -64px;
+  background: url(./assets/images/e360fd16-f4c2-4710-97a7-fd2b52802ce8.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 17;
+}

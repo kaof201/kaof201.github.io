@@ -1,0 +1,341 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  background: #3f0fa6;
+  overflow: hidden;
+}
+.rectangle {
+  position: relative;
+  width: 1440px;
+  height: 165px;
+  margin: -12px 0 0 0;
+  background: #15193e;
+}
+.image {
+  position: absolute;
+  width: 259px;
+  height: 91px;
+  top: 54px;
+  left: 25px;
+  background: url(./assets4/images/6250faa2b7607f7491f9d02f4283be4658512b0e.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+.image-1 {
+  position: absolute;
+  width: 259px;
+  height: 91px;
+  top: 0;
+  left: 0;
+  background: url(./assets4/images/6250faa2b7607f7491f9d02f4283be4658512b0e.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Oswald, sans-serif;
+  background: #f0f0f0;
+}
+
+a {
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #a8c9e4;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+  transition: color 0.5s ease;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+/* Hover effects */
+a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #a8c9e4;
+  border-bottom: 2px solid #a8c9e4;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a8c9e4;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: -1;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+a:hover:after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Oswald, sans-serif;
+  background: #f0f0f0;
+}
+
+/* Estilo Base */
+a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #a8c9e4;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+  white-space: nowrap;
+  transition: color 0.5s ease;
+  z-index: 1;
+}
+
+/* Efecto Hover */
+a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #a8c9e4;
+  border-bottom: 2px solid #a8c9e4;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a8c9e4;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: -1;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+a:hover:after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Clases Específicas */
+.news {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 73px;
+  left: 1151px;
+  z-index: 23;
+}
+
+.inicio {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 73px;
+  left: 401px;
+  z-index: 24;
+}
+
+.game-guide {
+  position: absolute;
+  top: 73px;
+  left: 603px;
+  z-index: 25;
+}
+
+.characters {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 73px;
+  left: 898px;
+  z-index: 26;
+}
+.rectangle-2 {
+  position: absolute;
+  width: 1440px;
+  height: 1040px;
+  top: 153px;
+  left: 0;
+  background: #3f0fa6;
+  z-index: 3;
+}
+.flex-row-ece {
+  position: relative;
+  width: 658px;
+  height: 95px;
+  margin: 36px 0 0 656px;
+  z-index: 9;
+}
+.modos-de-juego {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 95px;
+  top: 0;
+  left: 149px;
+  color: #f5eb18;
+  font-family: Oswald, var(--default-font-family);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 94.976px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 5;
+}
+.dbsz-deco-right-v {
+  position: absolute;
+  width: 127px;
+  height: 55px;
+  top: 26px;
+  left: 0;
+  background: url(./assets4/images/aae18c4e-5bd9-4ecb-9562-98c1dbae0de1.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 8;
+}
+.dbsz-deco-right-v-3 {
+  position: absolute;
+  width: 127px;
+  height: 55px;
+  top: 26px;
+  left: 531px;
+  background: url(./assets4/images/cb39451c62f6a703ff699b6145ff2a1d2dc80487.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 9;
+}
+.rectangle-4 {
+  position: relative;
+  width: 834px;
+  height: 350px;
+  margin: 103px 0 0 579px;
+  background: #15193e;
+  z-index: 7;
+  border-radius: 56px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35);
+  padding: 40px;
+  overflow: hidden;
+}
+
+.en-linea-disfruta-sparking {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 782px;
+  height: 243px;
+  top: 48px;
+  left: 32px;
+  color: #fffcfc;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 31.164px;
+  text-align: left;
+  z-index: 7;
+}
+.fundamentals-goten-trunks {
+  position: absolute;
+  width: 630px;
+  height: 611px;
+  top: 291px;
+  left: -31px;
+  background: url(./assets4/images/e69d6904530e9ac93a39f13d97a975f89e331ec7.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 4;
+}
+.download {
+  position: absolute;
+  width: 1519px;
+  height: 82px;
+  top: 953px;
+  left: -64px;
+  background: url(./assets4/images/68407fd7ca96b7c0200c195bfe2e4ef49f35b1ba.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 10;
+  transform: rotate(180deg);
+}

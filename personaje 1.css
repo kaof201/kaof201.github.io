@@ -1,0 +1,301 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+.rectangle {
+  position: relative;
+  width: 1440px;
+  height: 165px;
+  margin: -12px 0 0 0;
+  background: #15193e;
+  z-index: 1;
+}
+.image {
+  position: absolute;
+  width: 259px;
+  height: 91px;
+  top: 54px;
+  left: 25px;
+  background: url(./assets6/images/6250faa2b7607f7491f9d02f4283be4658512b0e.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Oswald, sans-serif;
+  background: #f0f0f0;
+}
+a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #a8c9e4;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+  white-space: nowrap;
+  transition: color 0.5s ease;
+  z-index: 1;
+}
+a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #a8c9e4;
+  border-bottom: 2px solid #a8c9e4;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a8c9e4;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: -1;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+a:hover:after {
+  transform: scale(1);
+  opacity: 1;
+}
+.news {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 73px;
+  left: 1151px;
+  z-index: 23;
+}
+
+.inicio {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 73px;
+  left: 401px;
+  z-index: 24;
+}
+
+.game-guide {
+  position: absolute;
+  top: 73px;
+  left: 603px;
+  z-index: 25;
+}
+
+.characters {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  top: 73px;
+  left: 898px;
+  z-index: 26;
+}
+.rectangle-1 {
+  position: relative;
+  width: 1441px;
+  height: 871px;
+  margin: 0 0 0 0;
+  background: #3f0fa6;
+}
+.image-2 {
+  position: absolute;
+  width: 371px;
+  height: 835px;
+  top: 8px;
+  left: 33px;
+  background: url(./assets6/images/4356e6e8e5b2b705d77678ffbb54da78ed047d91.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 15;
+}
+.goku {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 51px;
+  top: 84px;
+  left: 410px;
+  color: #f58f29;
+  font-family: Roboto, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46.875px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 16;
+}
+.frame {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 44px;
+  position: absolute;
+  width: 1054px;
+  height: 278px;
+  top: 220px;
+  left: 360px;
+  z-index: 3;
+}
+.frame-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 46px;
+  position: relative;
+  width: 139px;
+  z-index: 4;
+}
+.image-4 {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 116px;
+  background: url(./assets6/images/3bc7394f-0737-4320-a005-04858b4e74a5.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 5;
+}
+.image-5 {
+  position: relative;
+  width: 139px;
+  height: 116px;
+  background: url(./assets6/images/da21fce4-cf75-4088-b3dd-4e07b97e48ed.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 12;
+}
+.frame-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 46px;
+  position: relative;
+  width: 139px;
+  z-index: 6;
+}
+.image-7 {
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  min-width: 0;
+  height: 116px;
+  background: url(./assets6/images/7b1aa35b-0324-47f7-83eb-eb34481f82f1.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 7;
+}
+.image-8 {
+  position: relative;
+  width: 139px;
+  height: 116px;
+  background: url(./assets6/images/c828ee23-9b08-4aab-970d-dee64c66654b.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 13;
+}
+.image-1 {
+  position: relative;
+  width: 139px;
+  height: 116px;
+  background: url(./assets6/images/2ccca8f4-a10f-48e0-b165-276205de88b3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 8;
+}
+.image-2-9 {
+  position: relative;
+  width: 139px;
+  height: 116px;
+  background: url(./assets6/images/f744f88c-5a15-480f-990c-a62f205d982c.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 14;
+}
+.image-3 {
+  position: relative;
+  width: 139px;
+  height: 116px;
+  background: url(./assets6/images/dc103959-4a3d-4a6a-8e56-83edf3f10604.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 9;
+}
+.image-4-a {
+  position: relative;
+  width: 139px;
+  height: 116px;
+  background: url(./assets6/images/2be98abe-bf70-4d70-86e6-65b0206d3f17.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 10;
+}
+.image-5-b {
+  position: relative;
+  width: 139px;
+  height: 116px;
+  background: url(./assets6/images/3c70da72-c773-47bc-a7a3-69f199efd6c4.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 11;
+}
